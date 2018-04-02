@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Mapa del Sistema
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ul>
+    <li *ngFor="let parqueadero of _fp.parqueaderos | async"> {{ parqueadero.nombre }} </li>
+  </ul>
+</ion-content>
