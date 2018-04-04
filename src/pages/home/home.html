@@ -5,41 +5,49 @@
 </ion-header>
 
 <ion-content padding>
-  <ion-card>
+  <!--<ion-card>-->
 
     <ion-item>
       <ion-avatar item-start>
-        <img src="https://placeimg.com/1920/1080/people">
+        <img src="https://placeimg.com/1920/1080/arch">
       </ion-avatar>
-      <h2>Marty McFly</h2>
-      <p>November 5, 1955</p>
+      <h2>SJC Bicycles</h2>
+      <p>Ingrese sus datos</p>
     </ion-item>
 
-    <img src="https://placeimg.com/1920/1080/tech">
+    <!--<img src="https://placeimg.com/1920/1080/tech">-->
 
     <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p>
+      <div class="form-group inner-addon left-addon">
+        <label><strong>Email</strong></label>
+        <!--<span><i class="fa fa-envelope" aria-hidden="true"></i></span>-->
+        <input [(ngModel)]="email"
+              type="email" name="email"
+              class="form-control">
+      </div>
+
+      <div class="form-group inner-addon left-addon">
+        <label><strong>Password</strong></label>
+        <!--<<span><i class="fa fa-key" aria-hidden="true"></i></span>>-->
+        <input type="password" name="password"
+              class="form-control">
+      </div>
     </ion-card-content>
 
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="thumbs-up"></ion-icon>
-          <div>12 Likes</div>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="text"></ion-icon>
-          <div>4 Comments</div>
-        </button>
-      </ion-col>
-      <ion-col center text-center>
-        <ion-note>
-          11h ago
-        </ion-note>
-      </ion-col>
-    </ion-row>
+    <div padding>
+      <button class="btn btn-outline-success btn-block"
+             type="button" name="button">
+             <!-- Se usa para cambair de icono sincrono y asincrono y simular el efecto
+                  de carga -->
+             <span>Iniciar Sesion</span>
+            </button>
+      <button class="btn btn-outline-danger btn-block"
+              type="button" name="button">
+               <!-- Se usa para cambair de icono sincrono y asincrono y simular el efecto
+                    de carga -->
+               <span>Registrarse</span>
+              </button>
+    </div>
 
-  </ion-card>
+  <!--</ion-card>-->
 </ion-content>

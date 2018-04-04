@@ -9,6 +9,10 @@ import { FirebaseProvider } from '../../providers/firebase/firebase'
 })
 export class MapaPage {
 
+  lat: number = 4.6255594;
+  lng: number = -74.1387344;
+  zoom:number = 12;
+
   constructor(public navCtrl: NavController, public _fp:FirebaseProvider) {
 
   }

@@ -14,6 +14,8 @@ import { MapaPage } from '../pages/mapa/mapa'
 import { EstadisticasPage } from '../pages/estadisticas/estadisticas'
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+//Google mapas
+import { AgmCoreModule } from '@agm/core';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,6 +32,9 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBLNUZ79p5RUKzuKDAI_QUU2CjZb9H7jGw'
+    }),
     AngularFireModule.initializeApp(ENV.firebase), // imports firebase/app needed for everything
     AngularFirestoreModule, // imports firebase/firestore, only needed for database features
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
