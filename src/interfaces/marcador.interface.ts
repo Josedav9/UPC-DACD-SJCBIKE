@@ -9,3 +9,16 @@ export interface Marcador{
   bicicletas:BicicletasRef[];
   id?:string;
 }
+
+export interface Parqueadero{
+  id?:string;
+  caracteristicas:{
+    lat:number;
+    lng:number;
+    nombre:string;
+    bicicletas:BicicletasRef[];
+  }
+  origenes?:{
+
+  }
+}

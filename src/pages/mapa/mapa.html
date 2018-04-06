@@ -9,12 +9,12 @@
 <ion-content>
   <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom">
     <agm-marker *ngFor="let parqueadero of _fp.parqueaderos | async"
-                [latitude]="parqueadero.lat"
-                [longitude]="parqueadero.lng"
+                [latitude]="parqueadero.caracteristicas.lat"
+                [longitude]="parqueadero.caracteristicas.lng"
                 iconUrl = "assets/img/mountainbiking-3.png">
                 <agm-info-window>
-                  <strong>{{ parqueadero.nombre | uppercase }}</strong>
-                  <p>Bicicletas: {{ parqueadero.bicicletas.length }} <br>
+                  <strong>{{ parqueadero.caracteristicas.nombre | uppercase }}</strong>
+                  <p>Bicicletas: {{ parqueadero.caracteristicas.bicicletas.length }} <br>
                      Espacios Disponibles:
                   </p>
                 </agm-info-window>
