@@ -13,7 +13,10 @@ import { ENV } from '../environments/environment';
 import { MapaPage } from '../pages/mapa/mapa'
 import { EstadisticasPage } from '../pages/estadisticas/estadisticas'
 import { HomePage } from '../pages/home/home';
+import { RegistroPage } from '../pages/registro/registro';
+import { AcercadePage } from '../pages/acercade/acercade';
 import { TabsPage } from '../pages/tabs/tabs';
+
 //Google mapas
 import { AgmCoreModule } from '@agm/core';
 
@@ -27,6 +30,8 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
     MapaPage,
     EstadisticasPage,
     HomePage,
+    RegistroPage,
+    AcercadePage,
     TabsPage
   ],
   imports: [
@@ -46,6 +51,8 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
     MapaPage,
     EstadisticasPage,
     HomePage,
+    RegistroPage,
+    AcercadePage,
     TabsPage
   ],
   providers: [
