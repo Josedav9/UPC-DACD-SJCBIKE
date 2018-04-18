@@ -15,6 +15,7 @@ import { EstadisticasPage } from '../pages/estadisticas/estadisticas'
 import { HomePage } from '../pages/home/home';
 import { RegistroPage } from '../pages/registro/registro';
 import { AcercadePage } from '../pages/acercade/acercade';
+import { VersionPage } from '../pages/version/version';
 import { TabsPage } from '../pages/tabs/tabs';
 
 //Google mapas
@@ -32,6 +33,7 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
     HomePage,
     RegistroPage,
     AcercadePage,
+    VersionPage,
     TabsPage
   ],
   imports: [
@@ -53,6 +55,7 @@ import { FirebaseProvider } from '../providers/firebase/firebase';
     HomePage,
     RegistroPage,
     AcercadePage,
+    VersionPage,
     TabsPage
   ],
   providers: [
