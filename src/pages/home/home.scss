@@ -1,0 +1,32 @@
+page-home {
+
+}
+
+span .fa-envelope{
+  color: rgb(18, 78, 158);
+}
+
+span .fa-key{
+  color: rgb(18, 78, 158);
+}
+
+.inner-addon {
+  position: relative;
+}
+.inner-addon .fa {
+  position: absolute;
+  padding: 43px 10px 10px 10px;
+  pointer-events: none;
+}
+.left-addon .fa {
+  left: 0px;
+}
+.right-addon .fa {
+  right: 0px;
+}
+.left-addon input {
+  padding-left: 30px;
+}
+.right-addon input {
+  padding-right: 30px;
+}
